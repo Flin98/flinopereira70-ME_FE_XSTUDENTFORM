@@ -73,14 +73,13 @@ export default function App() {
   return (
     <div className="container">
       <div className="card">
-        {/* Title must be a single uninterrupted text string without <br /> */}
+        {/* Rendered as one plain string with no <br/> tag so Cypress matches it */}
         <h1 className="title">Student Registration Form</h1>
 
         <form onSubmit={handleSubmit} className="form" noValidate>
           <div className="form-group">
-            <label className="label" htmlFor="name-input">Name</label>
+            <label className="label">Name</label>
             <input
-              id="name-input"
               type="text"
               name="name"
               placeholder="Enter name"
@@ -92,9 +91,8 @@ export default function App() {
           </div>
 
           <div className="form-group">
-            <label className="label" htmlFor="username-input">Username</label>
+            <label className="label">Username</label>
             <input
-              id="username-input"
               type="text"
               name="username"
               placeholder="Enter username"
@@ -108,9 +106,8 @@ export default function App() {
           </div>
 
           <div className="form-group">
-            <label className="label" htmlFor="college-input">College</label>
+            <label className="label">College</label>
             <input
-              id="college-input"
               type="text"
               name="college"
               placeholder="Enter college"
@@ -124,9 +121,8 @@ export default function App() {
           </div>
 
           <div className="form-group">
-            <label className="label" htmlFor="email-input">Email</label>
+            <label className="label">Email</label>
             <input
-              id="email-input"
               type="email"
               name="email"
               placeholder="Enter email"
@@ -138,9 +134,8 @@ export default function App() {
           </div>
 
           <div className="form-group">
-            <label className="label" htmlFor="password-input">Password</label>
+            <label className="label">Password</label>
             <input
-              id="password-input"
               type="password"
               name="password"
               placeholder="Enter password"
@@ -154,9 +149,8 @@ export default function App() {
           </div>
 
           <div className="form-group">
-            <label className="label" htmlFor="address-input">Address</label>
+            <label className="label">Address</label>
             <input
-              id="address-input"
               type="text"
               name="address"
               placeholder="Enter address"
